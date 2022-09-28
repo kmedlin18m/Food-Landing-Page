@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-/* Custom Properties */
 
 :root {
     --leading: 2em;
@@ -11,6 +10,7 @@ body {
     margin: 0;
 }
 
+/* Top half of page */
 .hero-bg {
     background: #307D99 url('../images/bg15.jpg');
     background-size: cover;
@@ -63,6 +63,7 @@ h1 span::before {
     margin: 0 1em 3em;
 }
 
+/* "Enter your city" container */
 .form-container {
     background-color: white;
     margin: 2em -2em 0;
@@ -109,6 +110,7 @@ input[type=button]:hover {
     background-color: rgb(216, 126, 1);
 }
 
+/* Bottom half of page */
 .authentic {
     margin: 0;
 }
@@ -159,6 +161,7 @@ p {
     animation: overlay 3s forwards;
 }
 
+/* Changes margins for "Enter your city" format when width is larger than 730px */
 @media (min-width: 730px) {
 
     section {
@@ -169,6 +172,7 @@ p {
     }
 }
 
+/* Changes layout of "Enter your city" format when width is larger than 930px */
 @media (min-width: 930px) {
 
     .hero-bg {
@@ -235,10 +239,10 @@ p {
         margin: 0;
     }
 }
-
+/* Animation for the fade in */
 .top {
     animation: fadeIn 2s forwards;
-}
+ }
 
 @keyframes fadeIn {
     from {
@@ -250,7 +254,7 @@ p {
         transform: translate(0);
     }
 }
-
+/* Animation for "searching" overlay */
 @keyframes overlay {
     0% {
         opacity: 0;
