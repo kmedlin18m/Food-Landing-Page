@@ -9,9 +9,11 @@
     
 </head>
 <body>
+    <!--Overlay when button is pressed-->
     <div class="overlay" id="overlay">
         <h3>Searching now...</h3>
     </div>
+    <!--Top half of page-->
     <div class="hero-bg">
         <section class="top">
             <header>
@@ -36,7 +38,7 @@
             </div>
         </section>
     </div>
-
+    <!--Bottom half of page -->
     <section class="authentic">
         <div class="right-col">
             <h2>Authentic. Wholesome.</h2>
@@ -45,12 +47,12 @@
         </div>
         <img src="images/food.jpg" alt="Picture of food in a bowl">
     </section>
-
+    <!--JavaScript-->
     <script>
-
+        
         let btn = document.getElementById('cta-btn');
         let overlay = document.getElementById('overlay');
-
+        // Overlay to mimick a loading screen once the button is pressed, and setTimeout function to reset it" //
         btn.addEventListener('click', () => {
             overlay.style.display = 'grid';
             overlay.classList.add('animate-overlay')
